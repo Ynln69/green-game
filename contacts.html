@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPANYNAME</title>
+    <meta
+      name="description"
+      content="Dive into the excitement of free social casino games! Enjoy the thrill of gaming with no financial risk, tailored for your entertainment."
+    />
+    <meta
+      name="keywords"
+      content="Social Casino, Free Games, Casino Entertainment, Play Now, Fun Gaming, No Real Prizes, Online Games"
+    />
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="./" class="mobile-menu-logo">COMPANYNAME</a>
+        <button class="close-menu" aria-label="Close menu">
+          <img src="./img/akar-icons_cross.svg" alt="close burger-menu" />
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="./#vacation">About us</a></li>
+        <li><a href="./privacy-policy.html">Privacy policy</a></li>
+        <li><a href="./terms.html">Terms & conditions</a></li>
+        <li><a href="./contacts.html">Contact us</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>DIVE INTO THE EXCITEMENT OF FREE SOCIAL CASINO GAMES!</h1>
+            <button class="play-btn">PLAY GAME</button>
+          </div>
+          <div class="hero-image">
+            <picture>
+              <source
+                srcset="./img/hero-img-m.svg"
+                media="(max-width: 767px)"
+              />
+              <source srcset="./img/hero-img.svg" media="(min-width: 768px)" />
+              <img src="./img/main-bg-m.svg" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="container">
+          <h2 class="title" style="text-align: center">Write to Us</h2>
+          <div id="formMessage" class="form-message" style="display: none"></div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="action-button"
+              style="margin-right: auto; margin-left: auto"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="./js/builder.js"></script>
+    <script src="./js/mob-menu.js"></script>
+    <script src="./js/contact-form.js"></script>
+  </body>
+</html>

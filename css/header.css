@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+  padding: 20px 0;
+
+  background-color: var(--header-bg);
+  color: var(--wight-color);
+  font-family: var(--font3);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.071vw + 1.036rem, 2rem);
+  text-transform: uppercase;
+}
+.nav {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 1920px) {
+    gap: clamp(30px, calc(10px + 5vw), 50px);
+  }
+}
+.nav-links a {
+  font-weight: 500;
+  font-size: 24px;
+  transition: color var(--time-function);
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.burger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(116, 135, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s linear;
+}
+.mobile-menu.active {
+  left: calc(100% - 300px);
+}
+.mobile-menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 379px;
+  transition: left 0.3s ease;
+  z-index: 10;
+  padding: 20px 15px;
+
+  background-color: var(--main-bg-color);
+}
+.mobile-menu-logo {
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+.close-menu {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  fill: var(--main-color);
+}
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mobile-nav-links a {
+  font-family: var(--font3);
+  font-weight: 600;
+  font-size: 20px;
+  transition: color var(--time-function);
+  &:hover,
+  &:focus {
+    color: var(--wight-color);
+  }
+}
+/* Media Queries */
+@media (min-width: 1200px) {
+  .nav {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
