@@ -38,7 +38,7 @@
   transition: color var(--time-function);
   &:hover,
   &:focus {
-    color: var(--main-color);
+    color: var(--btn-color);
   }
 }
 .burger-menu {
@@ -60,8 +60,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(116, 135, 0, 0.8);
-  backdrop-filter: blur(5px);
+  background: rgba(87, 92, 80, 0.61);
+  backdrop-filter: blur(10px);
   z-index: 5;
   opacity: 0;
   pointer-events: none;
@@ -84,14 +84,13 @@
   z-index: 10;
   padding: 20px 15px;
 
-  background-color: var(--main-bg-color);
+  background-color: var(--header-bg);
 }
 .mobile-menu-logo {
   font-family: var(--font3);
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
-  color: var(--main-color);
 }
 .mobile-menu-header {
   display: flex;
@@ -105,7 +104,6 @@
   border: none;
   font-size: 18px;
   cursor: pointer;
-  fill: var(--main-color);
 }
 .mobile-nav-links {
   list-style: none;
@@ -120,7 +118,7 @@
   transition: color var(--time-function);
   &:hover,
   &:focus {
-    color: var(--wight-color);
+    color: var(--btn-color);
   }
 }
 /* Media Queries */
