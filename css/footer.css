@@ -6,10 +6,9 @@
 }
 .footer-container {
   width: 100%;
-  max-width: 760px;
-
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 .footer-links {
@@ -17,6 +16,10 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
+  max-width: 630px;
+  margin-right: auto;
+  margin-left: auto;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -24,6 +27,8 @@
 }
 
 .footer-text {
+  width: 100%;
+  max-width: 760px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
