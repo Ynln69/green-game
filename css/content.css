@@ -44,10 +44,10 @@
   margin-bottom: 8px;
 
   font-weight: 700;
-  font-size: clamp(1.5rem, 2.143vw + 1.071rem, 3rem);
+  font-size: x-large;
   text-transform: uppercase;
-  @media (min-width: 834px) {
-    margin-bottom: 30px;
+  @media (min-width: 1920px) {
+    font-size: clamp(1.5rem, 2.143vw + 1.071rem, 3rem);
   }
 }
 .hero-content p {
@@ -56,27 +56,36 @@
   margin-bottom: 12px;
 
   font-weight: 400;
-  font-size: 18px;
+
+  font-size: 16px;
   color: var(--hero-text-color);
+  @media (min-width: 1920px) {
+    font-size: 18px;
+  }
 }
 .play-btn {
   display: block;
   width: 100%;
-  max-width: 410px;
+  max-width: 292px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 7px;
   border: none;
 
   background-color: var(--btn-color);
   color: var(--wight-color);
   font-family: var(--font-family);
   font-weight: 900;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
   transition: background-color var(--time-function);
   &:hover {
     background-color: var(--header-bg);
+  }
+  @media (min-width: 1920px) {
+    max-width: 410px;
+    padding: 10px;
+    font-size: 24px;
   }
 }
 
