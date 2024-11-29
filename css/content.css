@@ -207,15 +207,21 @@
   margin-bottom: 8px;
 
   font-weight: 700;
-  font-size: clamp(1.5rem, 1.071vw + 1.286rem, 2.25rem);
+  font-size: x-large;
   text-transform: uppercase;
+  @media (min-width: 1920px) {
+    font-size: clamp(1.5rem, 1.071vw + 1.286rem, 2.25rem);
+  }
 }
 .main-content p {
   margin-bottom: 12px;
 
   color: var(--hero-text-color);
   font-weight: 400;
-  font-size: clamp(1.125rem, 0.179vw + 1.089rem, 1.25rem);
+  font-size: 16px;
+  @media (min-width:1920px) {
+    font-size: clamp(1.125rem, 0.179vw + 1.089rem, 1.25rem);
+  }
 }
 /* game */
 .game-section {
