@@ -211,7 +211,7 @@
 /* game */
 .game-section {
   padding-top: clamp(25px, calc(10px + 5vw), 0);
-  padding-bottom: clamp(80px, calc(10px + 5vw), 120px);;
+  padding-bottom: clamp(80px, calc(10px + 5vw), 120px);
 }
 .games-grid {
   display: grid;
@@ -258,7 +258,7 @@
   }
 }
 
-.logos {    
+.logos {
   width: 100%;
   max-width: 760px;
   margin-right: auto;
@@ -276,54 +276,44 @@
   text-align: justify;
 }
 
-/* IMG */
-.main-img {
-  @media (min-width: 1920px) {
-    width: 1264px;
-    height: 1216px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 /* CONTACTS */
-.title-contacts {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffd700;
-}
 .contact-form {
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
-}
-.form-group {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width: 1920px) {
+    max-width: 900px;
+  }
 }
 .form-group label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   font-size: 16px;
-  color: #ffd700;
+  color: var(--btn-color);
 }
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ffd700;
-  border-radius: 4px;
-  background-color: #111;
+  padding: 20px;
+  border: 1px solid var(--btn-color);
+  border-radius: 10px;
+  background-color: var(--header-bg);
   color: #fff;
   font-size: 16px;
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #999;
+  color: var(--text-color);
+  font-size: large;
+  font-family: var(--third-family);
 }
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ffe066;
+  border-color: var(--btn-color);
 }
 .action-button {
   width: 100%;
@@ -333,7 +323,7 @@
   border: none;
 
   background: var(--btn-color);
-  color: var(--main-bg-color);
+  color: var(--wight-color);
   font-family: var(--font3);
   font-weight: 800;
   font-size: 24px;
@@ -341,63 +331,55 @@
   text-align: center;
   transition: background-color var(--time-function);
   &:hover {
-    background-color: #f7e990;
+    background-color: #95f790;
   }
-}
-.action-button:hover {
-  background-color: #e6c200;
 }
 .form-message {
   margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #ffd700;
+  border: 1px solid var(--btn-color);
   border-radius: 4px;
-  background-color: #111;
-  color: #ffd700;
+
+  background-color: var(--header-bg);
+  color: var(--wight-color);
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .terms-section {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-
 .terms-title {
+  font-family: var(--font4);
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
-  color: #ffd700;
+  color: var(--btn-color);
 }
-
 .terms-content {
-  background-color: #111; /* Темно-сірий фон для контенту */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 .terms-subtitle {
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #ffd700;
+  color: var(--btn-color);
 }
-
 .terms-content p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #fff; /* Білий текст для абзаців */
 }
-
 .terms-link {
-  color: #ffd700;
+  color: var(--btn-color);
   text-decoration: none;
 }
-
 .terms-link:hover {
   text-decoration: underline;
 }
